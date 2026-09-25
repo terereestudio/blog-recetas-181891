@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Recetas de la Familia</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="icono_receta_byt.png">
+</head>
+
+<body>
+
+<!-- CABECERA DE PAGINA -->
+
+<header class="cabecera-principal">
+    <div class="contenedor cabecera-flex">
+        <a href="index.html" class="logo-enlace">
+          <div class="logo-container">
+            <img src="img/icono_receta_byt.png" alt="Logo Recetas de la Familia" class="logo-img">
+            <h1>Recetas de la Familia</h1>
+          </div>
+        </a>
+        <nav class="menu-navegacion">
+            <a href="index.html">Inicio</a>
+            <a href="recetas.html">Recetas</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+</header>
+
+<main> 
+
+<section class="datos-contacto">
+    <h3>¿Quisieras compartirme tu receta?</h3>
+    <p>Contame un poco de su historia, escribime los pasos y voy a probarla y compartiré mi experiencia.</p>
+
+  <!-- hacer formulario con formspree!!!! -->
+
+  <form action="https://formspree.io/f/mnpqdadd" method="POST">
+    
+    <div class="grupo-campo">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+    </div>
+
+    <div class="grupo-campo">
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+    </div>
+
+    <div class="grupo-campo">
+      <label for="mensaje">Tu receta:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribí tu historia y receta aquí..."></textarea>
+    </div>
+
+    <button type="submit">Enviar receta</button>
+  </form>
+</section>
+</main>
+
+<!-- BOTON DE WPP -->
+
+ <a href="https://wa.me/5493644328260" class="btn-whatsapp" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg?utm_source=es.wikipedia.org&utm_campaign=imageinfo&utm_content=original" alt="WhatsApp">
+</a>
+
+</body>
+</html>
